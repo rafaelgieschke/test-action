@@ -9,7 +9,7 @@ export default {
             file: "index.dist.mjs",
             format: "esm",
         },
-        { file: "index.dist.cjs.js", format: "cjs" },
+        { file: "index.dist.cjs", format: "cjs" },
     ],
     plugins: [
         preserveShebangs(),

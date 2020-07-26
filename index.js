@@ -8,6 +8,7 @@ import { env } from "process";
 const { Octokit } = octokitMod;
 
 (async () => {
+    console.log(process);
     const auth = env.GITHUB_TOKEN || readFileSync("TOKEN", "ascii").trim();
     const octokit = new Octokit({ auth });
 

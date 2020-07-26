@@ -2,4 +2,4 @@ from node
 workdir /src
 copy . .
 run npm i
-cmd node index.js
+cmd node /src/index.js

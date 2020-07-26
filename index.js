@@ -9,7 +9,7 @@ const { Octokit } = octokitMod;
 
 (async () => {
     console.log(process);
-    const auth = env.GITHUB_TOKEN || readFileSync("TOKEN", "ascii").trim();
+    const auth = env.INPUT_TOKEN || readFileSync("TOKEN", "ascii").trim();
     const octokit = new Octokit({ auth });
 
     const owner = "rafaelgieschke";

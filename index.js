@@ -13,7 +13,7 @@ const { Octokit } = octokitMod;
     const octokit = new Octokit({ auth });
 
     const owner = "rafaelgieschke";
-    const repo = "test3";
+    const repo = "test5";
     const res = await octokit.request(
         "GET /repos/{owner}/{repo}/actions/secrets/public-key",
         {

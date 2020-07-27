@@ -21,6 +21,7 @@ const { Octokit } = octokitMod;
             repo,
         }
     );
+    console.log(res);
 
     const res2 = await octokit.request(
         "GET /repos/{owner}/{repo}/actions/secrets",
